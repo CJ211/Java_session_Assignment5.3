@@ -4,7 +4,7 @@ class Employee
 {
     int age;
     double basic_salary;
-    float da,hra,gross_sal
+    double pf,hra,gross_sal
     String name, address, gender;
     Scanner get = new Scanner(System.in);
     Employee()
@@ -22,9 +22,9 @@ class Employee
     }
     void calc_salary()
     {
-     		float da=basic_salary*15/100;
-		     float hra=basic_salary*10/100;
-	     	float gross_sal=basic_salary+da+hra;
+     		 pf=basic_salary*12/100;
+		 hra=basic_salary*50/100;
+	     	 gross_sal=basic_salary+hra-pf;
      
     }
     void display()
